@@ -1,0 +1,6 @@
+{
+  "name": "KALA Coffee & Space",
+  "description": "Specialty coffee and mindful space in Senopati, Jakarta Selatan. Ruang teduh untuk menikmati jeda, merajut percakapan hangat, dan menemukan inspirasi.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
