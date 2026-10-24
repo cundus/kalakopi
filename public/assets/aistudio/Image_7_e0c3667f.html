@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>KALA Coffee &amp; Space — Every Moment Has Its Own Story</title>
+<!-- Google Fonts: Playfair Display & Plus Jakarta Sans -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS v3 -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "on-secondary-fixed": "#151e13",
+            "inverse-on-surface": "#fbeee7",
+            "inverse-surface": "#362f2b",
+            "on-surface-variant": "#4f453c",
+            "background": "#fff8f5",
+            "tertiary": "#6c5234",
+            "error": "#ba1a1a",
+            "on-primary-container": "#fff1e7",
+            "tertiary-container": "#866a4a",
+            "on-surface": "#201a16",
+            "on-secondary-container": "#5b6658",
+            "secondary-fixed": "#dbe6d5",
+            "primary-container": "#8b6848",
+            "on-secondary": "#ffffff",
+            "surface-container": "#f8ebe4",
+            "secondary": "#576154",
+            "on-primary-fixed-variant": "#5e4024",
+            "error-container": "#ffdad6",
+            "on-secondary-fixed-variant": "#3f4a3d",
+            "surface": "#fff8f5",
+            "surface-variant": "#ede0d9",
+            "on-background": "#201a16",
+            "surface-container-high": "#f2e6df",
+            "primary-fixed-dim": "#eabe99",
+            "surface-container-lowest": "#ffffff",
+            "surface-tint": "#795839",
+            "secondary-container": "#d8e3d2",
+            "on-tertiary": "#ffffff",
+            "on-error": "#ffffff",
+            "surface-bright": "#fff8f5",
+            "primary": "#705032",
+            "on-tertiary-fixed": "#2a1802",
+            "outline": "#81756b",
+            "surface-dim": "#e4d8d1",
+            "surface-container-low": "#fef1ea",
+            "on-tertiary-fixed-variant": "#5a4226",
+            "secondary-fixed-dim": "#bfcab9",
+            "tertiary-fixed": "#ffddb9",
+            "inverse-primary": "#eabe99",
+            "primary-fixed": "#ffdcbf",
+            "on-error-container": "#93000a",
+            "on-primary-fixed": "#2d1601",
+            "outline-variant": "#d3c4b8",
+            "on-tertiary-container": "#fff1e5",
+            "surface-container-highest": "#ede0d9",
+            "tertiary-fixed-dim": "#e3c19b",
+            "on-primary": "#ffffff"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "space-md": "1.5rem",
+            "space-xs": "0.375rem",
+            "space-xl": "4rem",
+            "gutter-mobile": "1rem",
+            "gutter": "2rem",
+            "space-sm": "0.75rem",
+            "space-lg": "2.5rem",
+            "margin": "4rem",
+            "margin-mobile": "1.5rem"
+          },
+          "fontFamily": {
+            "headline-lg": ["Playfair Display"],
+            "headline-md": ["Playfair Display"],
+            "headline-sm": ["Playfair Display"],
+            "headline-lg-mobile": ["Playfair Display"],
+            "display-lg-mobile": ["Playfair Display"],
+            "body-sm": ["Plus Jakarta Sans"],
+            "label-sm": ["Plus Jakarta Sans"],
+            "display-md": ["Playfair Display"],
+            "body-lg": ["Plus Jakarta Sans"],
+            "body-md": ["Plus Jakarta Sans"],
+            "display-lg": ["Playfair Display"],
+            "label-md": ["Plus Jakarta Sans"],
+            "display-md-mobile": ["Playfair Display"]
+          },
+          "fontSize": {
+            "headline-lg": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.01em", "fontWeight": "400" }],
+            "headline-md": ["28px", { "lineHeight": "36px", "letterSpacing": "0", "fontWeight": "500" }],
+            "headline-sm": ["22px", { "lineHeight": "30px", "letterSpacing": "0", "fontWeight": "500" }],
+            "headline-lg-mobile": ["26px", { "lineHeight": "34px", "letterSpacing": "0", "fontWeight": "400" }],
+            "display-lg-mobile": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.01em", "fontWeight": "400" }],
+            "body-sm": ["13px", { "lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "400" }],
+            "label-sm": ["10px", { "lineHeight": "14px", "letterSpacing": "0.12em", "fontWeight": "600" }],
+            "display-md": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.01em", "fontWeight": "400" }],
+            "body-lg": ["18px", { "lineHeight": "30px", "letterSpacing": "0.01em", "fontWeight": "300" }],
+            "body-md": ["15px", { "lineHeight": "24px", "letterSpacing": "0.01em", "fontWeight": "400" }],
+            "display-lg": ["64px", { "lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "400" }],
+            "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.08em", "fontWeight": "600" }],
+            "display-md-mobile": ["32px", { "lineHeight": "40px", "letterSpacing": "0", "fontWeight": "400" }]
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+      vertical-align: middle;
+    }
+    ::selection {
+      background-color: #8b6848;
+      color: #fff8f5;
+    }
+    @keyframes pulse-subtle {
+      0%, 100% { opacity: 0.35; transform: translateY(0); }
+      50% { opacity: 0.9; transform: translateY(6px); }
+    }
+    .animate-breathing {
+      animation: pulse-subtle 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    }
+  </style>
+</head>
+<body class="bg-surface text-on-surface font-body-md antialiased selection:bg-primary-container selection:text-surface">
+<!-- TOP NAVIGATION BAR (Anchored via Shared Components JSON) -->
+<header class="docked full-width top-0 sticky z-50 bg-surface/90 dark:bg-inverse-surface/90 backdrop-blur-md border-b border-outline-variant/40 dark:border-outline/20">
+<div class="flex justify-between items-center w-full px-space-md md:px-margin max-w-7xl mx-auto h-20">
+<!-- Brand Logo -->
+<a class="flex flex-col group focus:outline-none" href="#beranda">
+<span class="font-headline-md text-headline-md tracking-tight text-on-surface dark:text-inverse-on-surface font-normal group-hover:text-primary transition-colors duration-300">
+          KALA
+        </span>
+<span class="font-label-sm text-label-sm tracking-[0.24em] text-outline uppercase -mt-1">
+          COFFEE &amp; SPACE
+        </span>
+</a>
+<!-- Desktop Navigation Links -->
+<nav class="hidden md:flex items-center space-x-8">
+<a class="font-label-md text-label-md tracking-widest uppercase border-b border-primary dark:border-inverse-primary text-primary dark:text-inverse-primary pb-1" href="#beranda">
+          Beranda
+        </a>
+<a class="font-label-md text-label-md tracking-widest uppercase text-on-surface-variant dark:text-surface-variant pb-1 transition-colors duration-300 hover:text-primary dark:hover:text-inverse-primary" href="#cerita-kami">
+          Cerita Kami
+        </a>
+<a class="font-label-md text-label-md tracking-widest uppercase text-on-surface-variant dark:text-surface-variant pb-1 transition-colors duration-300 hover:text-primary dark:hover:text-inverse-primary" href="#menu">
+          Menu
+        </a>
+<a class="font-label-md text-label-md tracking-widest uppercase text-on-surface-variant dark:text-surface-variant pb-1 transition-colors duration-300 hover:text-primary dark:hover:text-inverse-primary" href="#galeri">
+          Galeri
+        </a>
+<a class="font-label-md text-label-md tracking-widest uppercase text-on-surface-variant dark:text-surface-variant pb-1 transition-colors duration-300 hover:text-primary dark:hover:text-inverse-primary" href="#lokasi">
+          Lokasi
+        </a>
+</nav>
+<!-- Trailing Action -->
+<div class="flex items-center space-x-4">
+<a class="inline-flex items-center justify-center px-6 py-2.5 bg-inverse-surface text-inverse-on-surface font-label-md text-label-md tracking-widest uppercase rounded-none hover:bg-primary-container transition-all duration-300 ease-out" href="#lokasi">
+          Kunjungi Kami
+        </a>
+<!-- Mobile Menu Toggle Button -->
+<button aria-label="Buka Menu Navigasi" class="md:hidden text-on-surface p-1 focus:outline-none" id="mobileMenuBtn">
+<span class="material-symbols-outlined text-2xl">menu</span>
+</button>
+</div>
+</div>
+<!-- Mobile Drawer / Dropdown -->
+<div class="hidden md:hidden bg-surface-container border-b border-outline-variant/40 px-space-md py-6 flex-col space-y-4" id="mobileMenu">
+<a class="mobile-nav-link font-label-md text-label-md uppercase tracking-widest text-primary font-semibold" href="#beranda">Beranda</a>
+<a class="mobile-nav-link font-label-md text-label-md uppercase tracking-widest text-on-surface-variant hover:text-primary" href="#cerita-kami">Cerita Kami</a>
+<a class="mobile-nav-link font-label-md text-label-md uppercase tracking-widest text-on-surface-variant hover:text-primary" href="#menu">Menu</a>
+<a class="mobile-nav-link font-label-md text-label-md uppercase tracking-widest text-on-surface-variant hover:text-primary" href="#galeri">Galeri</a>
+<a class="mobile-nav-link font-label-md text-label-md uppercase tracking-widest text-on-surface-variant hover:text-primary" href="#lokasi">Lokasi</a>
+</div>
+</header>
+<main>
+<!-- HERO SECTION -->
+<section class="relative min-h-[92vh] flex items-center justify-center overflow-hidden" id="beranda">
+<!-- Background Image with Editorial Warm Grading Overlay -->
+<div class="absolute inset-0 z-0">
+<img alt="Suasana interior KALA Coffee &amp; Space yang hangat dan tenang" class="w-full h-full object-cover object-center scale-[1.02] transform transition-transform duration-1000" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBVOP02Me0bs1DaNqUrUHT_HP5g0wnGDqMTYXYvHYPBuqAPij7PAOgT8MQUihMUwGLEaSEfloW5ucQNTItVml8CqXmwI1J31aJjMEYXwQ_UkGCpCvoliN9uPbpt94j52dYhiCWXbM_cWLrfP5N_taLUGDcAVJuG4ZolWNEFYX6Ccb7mrRRy8AXAP4bO_7-lJ2fC8gS74mE_YjnqaxQbchub8Im8-E3d4QrDO1W_A__noccr7fzFYmD98w"/>
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/90 via-inverse-surface/60 to-inverse-surface/40"></div>
+<div class="absolute inset-0 bg-primary/20 mix-blend-multiply"></div>
+</div>
+<!-- Hero Content -->
+<div class="relative z-10 max-w-5xl mx-auto px-space-md md:px-margin text-center text-inverse-on-surface pt-12 pb-20">
+<span class="inline-block font-label-sm text-label-sm tracking-[0.25em] text-primary-fixed-dim uppercase mb-6 px-3 py-1 border border-outline-variant/30 backdrop-blur-sm">
+          Specialty Coffee &amp; Mindful Space
+        </span>
+<h1 class="font-headline-lg-mobile md:font-display-lg text-headline-lg-mobile md:text-display-lg text-inverse-on-surface font-normal tracking-tight mb-6 max-w-4xl mx-auto leading-tight">
+          Setiap Momen, <br class="hidden md:inline"/><span class="italic font-normal font-headline-lg text-primary-fixed-dim">Punya Cerita.</span>
+</h1>
+<p class="font-body-md md:font-body-lg text-body-md md:text-body-lg text-outline-variant max-w-2xl mx-auto mb-10 font-light leading-relaxed">
+          Lebih dari sekadar kopi. Sebuah ruang teduh untuk menikmati jeda, merajut percakapan hangat, dan menemukan inspirasi di tengah riuh kota.
+        </p>
+<!-- CTAs -->
+<div class="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6">
+<a class="w-full sm:w-auto px-8 py-4 bg-surface text-on-surface font-label-md text-label-md tracking-widest uppercase hover:bg-primary-container hover:text-surface transition-all duration-300 text-center" href="#cerita-kami">
+            Jelajahi KALA
+          </a>
+<a class="w-full sm:w-auto px-8 py-4 border border-outline-variant/80 text-inverse-on-surface font-label-md text-label-md tracking-widest uppercase hover:bg-inverse-surface/60 hover:border-inverse-on-surface transition-all duration-300 text-center backdrop-blur-sm" href="#menu">
+            Lihat Menu
+          </a>
+</div>
+</div>
+<!-- Minimal Breathing Scroll Indicator -->
+<div class="absolute bottom-6 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center animate-breathing pointer-events-none">
+<span class="font-label-sm text-label-sm uppercase tracking-[0.2em] text-outline-variant text-[9px] mb-2">Gulir</span>
+<div class="w-[1px] h-8 bg-gradient-to-b from-outline-variant to-transparent"></div>
+</div>
+</section>
+<!-- OUR STORY (Tentang KALA) -->
+<section class="py-space-xl md:py-28 bg-surface" id="cerita-kami">
+<div class="max-w-7xl mx-auto px-space-md md:px-margin">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+<!-- Narrative Left Column -->
+<div class="lg:col-span-7 space-y-6">
+<div class="flex items-center space-x-3">
+<span class="w-6 h-[1px] bg-primary"></span>
+<span class="font-label-md text-label-md tracking-[0.2em] uppercase text-primary font-semibold">
+                Tentang KALA
+              </span>
+</div>
+<h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface font-normal leading-snug">
+              Diracik dengan Hati.<br/>
+<span class="italic text-primary font-normal">Dinikmati Sepenuh Hati.</span>
+</h2>
+<div class="space-y-5 text-on-surface-variant font-body-md text-body-md font-light leading-relaxed pt-2">
+<p>
+                KALA lahir dari kerinduan akan sebuah jeda di tengah derap kota yang tergesa. Terinspirasi oleh kesederhanaan wabi-sabi dan keramahan tropis Nusantara, kami membangun ruang ini bukan sekadar sebagai kedai kopi, melainkan titik temu bagi jiwa-jiwa yang menghargai waktu.
+              </p>
+<p>
+                Setiap cangkir menyuarakan perjalanan panjang: dari kebun kopi dataran tinggi Gayo, lereng Ijen, hingga perbukitan Manggarai Flores. Kami memanggang dan mengekstraksi biji pilihan dengan presisi artisanal, menjaga kejujuran rasa yang dihadiahkan alam.
+              </p>
+</div>
+<!-- Quote Block -->
+<div class="border-l-2 border-primary/40 pl-6 py-2 my-6">
+<p class="font-headline-sm text-headline-sm italic text-on-surface font-light leading-relaxed">
+                “Kopi terbaik adalah yang dinikmati perlahan, bersama obrolan yang tak ingin segera usai.”
+              </p>
+<span class="block mt-2 font-label-sm text-label-sm uppercase tracking-widest text-outline">
+                — Filosofi Waktu KALA
+              </span>
+</div>
+<!-- Metrics / Provenance Mini-Trio -->
+<div class="grid grid-cols-3 gap-6 pt-4 border-t border-outline-variant/30">
+<div>
+<p class="font-headline-md text-headline-md text-primary font-normal">100%</p>
+<p class="font-label-sm text-label-sm tracking-wider uppercase text-outline mt-1">Single Origin Nusantara</p>
+</div>
+<div>
+<p class="font-headline-md text-headline-md text-primary font-normal">84+</p>
+<p class="font-label-sm text-label-sm tracking-wider uppercase text-outline mt-1">SCA Cupping Score</p>
+</div>
+<div>
+<p class="font-headline-md text-headline-md text-primary font-normal">350m²</p>
+<p class="font-label-sm text-label-sm tracking-wider uppercase text-outline mt-1">Area Hijau &amp; Terbuka</p>
+</div>
+</div>
+</div>
+<!-- Editorial Framed Image Right Column -->
+<div class="lg:col-span-5">
+<div class="relative bg-surface-container p-3 sm:p-5 border border-outline-variant/40 shadow-sm">
+<div class="overflow-hidden aspect-[4/5] bg-surface-variant">
+<img alt="Sajian latte hangat, cold brew segar, dan butter croissant di atas meja batu travertin KALA" class="w-full h-full object-cover transform hover:scale-105 transition-transform duration-700 ease-out" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAjFzpls2MHEecVBYp8iF7R_sLftvDkxU4SmAcBYEcfUeVxwFJefc1mZl3jJPVogsv-CO4x7mB_W_M-3pyKSEsW8OYVxWR9-_PWQU5N8mnP_HeYBXjqcD99HKXYIIp5-9AaE49savW2a6RKZAVv1yT-vRoVsxcmcZs9r7EEoAjllPudUOfQ0wfFUyaT6WfvvWwVhDctFi2Ae0ypmlDJdY4OmhodWvjXbDZRaTzL9yQEXjCLj8fnjQkQMQ"/>
+</div>
+<div class="pt-4 flex justify-between items-baseline px-1">
+<p class="font-headline-sm text-[16px] text-on-surface font-normal italic">
+                  Meja Temu, Sudut Favorit
+                </p>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-outline">
+                  KALA Space — 09:30 WIB
+                </span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SIGNATURE MENU (Menu Pilihan) -->
+<section class="py-space-xl md:py-28 bg-surface-container-low border-y border-outline-variant/30" id="menu">
+<div class="max-w-7xl mx-auto px-space-md md:px-margin">
+<!-- Header -->
+<div class="text-center max-w-2xl mx-auto mb-16">
+<span class="font-label-md text-label-md tracking-[0.2em] uppercase text-primary font-semibold block mb-2">
+            Menu Pilihan
+          </span>
+<h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface font-normal mb-4">
+            Dibuat dengan Sepenuh Hati
+          </h2>
+<p class="font-body-md text-body-md text-on-surface-variant font-light">
+            Kurasi biji kopi artisan pilihan Nusantara, racikan susu plant-based lembut, serta pastri hangat yang dipanggang segar setiap pagi.
+          </p>
+</div>
+<!-- Cards Bento/Grid -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Card 1: KALA Signature Latte -->
+<div class="bg-surface border border-outline-variant/40 p-8 flex flex-col justify-between hover:border-primary/60 transition-colors duration-300">
+<div>
+<div class="flex justify-between items-start mb-6">
+<span class="px-2.5 py-1 text-[11px] font-label-sm uppercase tracking-widest border border-outline-variant text-primary font-medium">
+                  House Specialty
+                </span>
+<span class="font-body-lg text-body-lg text-primary font-semibold tracking-tight">
+                  Rp 32.000
+                </span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-2 font-normal">
+                KALA Signature Latte
+              </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant font-light leading-relaxed mb-6">
+                Double shot espresso house blend (Sumatra Gayo &amp; Ciwidey), steamed velvety milk lembut, sentuhan raw brown sugar organik, dan esens vanila Madagaskar alami.
+              </p>
+</div>
+<!-- Sensory Flavor Bar -->
+<div class="pt-6 border-t border-outline-variant/30 space-y-2">
+<div class="flex justify-between text-[11px] font-label-sm text-outline uppercase tracking-wider">
+<span>Rasa / Tasting Notes</span>
+<span class="text-on-surface">Caramel • Hazelnut • Velvety</span>
+</div>
+<div class="w-full bg-surface-variant h-1 overflow-hidden flex">
+<div class="bg-primary w-4/5 h-full"></div>
+</div>
+</div>
+</div>
+<!-- Card 2: Aren Cold Brew -->
+<div class="bg-surface border border-outline-variant/40 p-8 flex flex-col justify-between hover:border-primary/60 transition-colors duration-300">
+<div>
+<div class="flex justify-between items-start mb-6">
+<span class="px-2.5 py-1 text-[11px] font-label-sm uppercase tracking-widest border border-outline-variant text-primary font-medium">
+                  Slow Steeped
+                </span>
+<span class="font-body-lg text-body-lg text-primary font-semibold tracking-tight">
+                  Rp 35.000
+                </span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-2 font-normal">
+                Aren Cold Brew
+              </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant font-light leading-relaxed mb-6">
+                Diseduh lambat selama 16 jam menggunakan air bersuhu rendah. Dipadukan dengan gula aren murni Lebak, susu segar, dan lapisan cold coconut cloud yang gurih.
+              </p>
+</div>
+<!-- Sensory Flavor Bar -->
+<div class="pt-6 border-t border-outline-variant/30 space-y-2">
+<div class="flex justify-between text-[11px] font-label-sm text-outline uppercase tracking-wider">
+<span>Rasa / Tasting Notes</span>
+<span class="text-on-surface">Brown Sugar • Dark Cacao • Refreshing</span>
+</div>
+<div class="w-full bg-surface-variant h-1 overflow-hidden flex">
+<div class="bg-primary w-[90%] h-full"></div>
+</div>
+</div>
+</div>
+<!-- Card 3: Artisan Butter Croissant -->
+<div class="bg-surface border border-outline-variant/40 p-8 flex flex-col justify-between hover:border-primary/60 transition-colors duration-300">
+<div>
+<div class="flex justify-between items-start mb-6">
+<span class="px-2.5 py-1 text-[11px] font-label-sm uppercase tracking-widest border border-outline-variant text-primary font-medium">
+                  Fresh Baked
+                </span>
+<span class="font-body-lg text-body-lg text-primary font-semibold tracking-tight">
+                  Rp 28.000
+                </span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-2 font-normal">
+                Artisan Butter Croissant
+              </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant font-light leading-relaxed mb-6">
+                Pastri klasik bergaya Prancis menggunakan mentega Normandy AOP berkualitas tinggi. Kulit keemasan renyah bertingkat dengan bagian dalam berongga sarang madu yang lembut.
+              </p>
+</div>
+<!-- Sensory Flavor Bar -->
+<div class="pt-6 border-t border-outline-variant/30 space-y-2">
+<div class="flex justify-between text-[11px] font-label-sm text-outline uppercase tracking-wider">
+<span>Karakter</span>
+<span class="text-on-surface">Flaky • Buttery • Golden Crispy</span>
+</div>
+<div class="w-full bg-surface-variant h-1 overflow-hidden flex">
+<div class="bg-primary w-3/4 h-full"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Menu Footer CTA -->
+<div class="mt-14 text-center">
+<a class="inline-flex items-center gap-3 text-on-surface font-label-md text-label-md uppercase tracking-[0.16em] pb-1 border-b border-primary hover:text-primary transition-all duration-300" href="#lokasi">
+<span>Lihat Seluruh Sajian KALA (Manual Brew, Mocktails &amp; Warm Brunch)</span>
+<span class="material-symbols-outlined text-lg">arrow_forward</span>
+</a>
+</div>
+</div>
+</section>
+<!-- THE KALA EXPERIENCE (Ruang & Rasa) -->
+<section class="py-space-xl md:py-28 bg-surface">
+<div class="max-w-7xl mx-auto px-space-md md:px-margin">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-16 pb-8 border-b border-outline-variant/30">
+<div>
+<span class="font-label-md text-label-md tracking-[0.2em] uppercase text-primary font-semibold block mb-2">
+              Ruang &amp; Rasa
+            </span>
+<h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface font-normal">
+              Sebuah Pengalaman Menyeluruh
+            </h2>
+</div>
+<p class="font-body-sm text-body-sm text-outline max-w-md mt-4 md:mt-0 font-light">
+            Setiap jengkal KALA dirancang dengan intensi: menjaga ketenangan indra dan mengembalikan kehangatan hubungan antar-manusia.
+          </p>
+</div>
+<!-- Asymmetric 3 Pillars -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12 lg:gap-16">
+<!-- Pillar 1 -->
+<div class="space-y-4">
+<span class="font-headline-lg text-headline-lg text-outline-variant font-light block">01</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-normal">
+              Biji Pilihan &amp; Presisi Ekstraksi
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant font-light leading-relaxed">
+              Kami bekerjasama langsung dengan kelompok tani lokal, memastikan proses panen ceri merah matang sempurna dan uji cita rasa cupping berstandar specialty internasional.
+            </p>
+<div class="pt-2 text-primary font-label-sm uppercase tracking-wider text-[11px] flex items-center gap-1.5">
+<span class="material-symbols-outlined text-base">nest_eco_leaf</span>
+              Ethically Sourced Beans
+            </div>
+</div>
+<!-- Pillar 2 -->
+<div class="space-y-4">
+<span class="font-headline-lg text-headline-lg text-outline-variant font-light block">02</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-normal">
+              Arsitektur Hangat &amp; Cahaya Alami
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant font-light leading-relaxed">
+              Paduan semen ekspos bertekstur, kayu jati reclaimed, jendela kaca berukuran besar, dan dedaunan monstera rindang mengundang sinar mentari masuk mengisi ruang dengan kelembutan.
+            </p>
+<div class="pt-2 text-primary font-label-sm uppercase tracking-wider text-[11px] flex items-center gap-1.5">
+<span class="material-symbols-outlined text-base">wb_sunny</span>
+              Natural Light Sanctuary
+            </div>
+</div>
+<!-- Pillar 3 -->
+<div class="space-y-4">
+<span class="font-headline-lg text-headline-lg text-outline-variant font-light block">03</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-normal">
+              Momen Bertemu &amp; Bekerja Tenang
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant font-light leading-relaxed">
+              Dilengkapi koneksi Wi-Fi berkecepatan stabil, stopkontak terintegrasi rapi di setiap sudut meja, serta pilihan playlist lo-fi akustik yang menenangkan untuk fokus dan kreativitas Anda.
+            </p>
+<div class="pt-2 text-primary font-label-sm uppercase tracking-wider text-[11px] flex items-center gap-1.5">
+<span class="material-symbols-outlined text-base">wifi</span>
+              Quiet Co-working Ready
+            </div>
+</div>
+</div>
+</div>
+</section>
+<!-- EDITORIAL GALLERY (Galeri) -->
+<section class="py-space-xl md:py-28 bg-surface-container-low border-t border-outline-variant/30" id="galeri">
+<div class="max-w-7xl mx-auto px-space-md md:px-margin">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+<div>
+<span class="font-label-md text-label-md tracking-[0.2em] uppercase text-primary font-semibold block mb-2">
+              Lensa &amp; Suasana
+            </span>
+<h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface font-normal">
+              Momen di KALA
+            </h2>
+</div>
+<p class="font-body-sm text-body-sm text-outline mt-3 md:mt-0 font-light">
+            Menangkap detik-detik hening, senyuman hangat, dan aroma kopi yang membekas.
+          </p>
+</div>
+<!-- Asymmetrical Editorial Collage -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6 items-stretch">
+<!-- Large Feature Image -->
+<div class="md:col-span-7 relative group overflow-hidden border border-outline-variant/40 bg-surface">
+<div class="aspect-[16/10] overflow-hidden">
+<img alt="Interior kafe KALA dengan bar espresso dan jendela kaca besar yang menghadap taman rimbun" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBVOP02Me0bs1DaNqUrUHT_HP5g0wnGDqMTYXYvHYPBuqAPij7PAOgT8MQUihMUwGLEaSEfloW5ucQNTItVml8CqXmwI1J31aJjMEYXwQ_UkGCpCvoliN9uPbpt94j52dYhiCWXbM_cWLrfP5N_taLUGDcAVJuG4ZolWNEFYX6Ccb7mrRRy8AXAP4bO_7-lJ2fC8gS74mE_YjnqaxQbchub8Im8-E3d4QrDO1W_A__noccr7fzFYmD98w"/>
+</div>
+<div class="p-4 bg-surface flex justify-between items-center text-xs text-outline font-label-sm uppercase tracking-wider">
+<span>01 / Pagi di Espresso Bar</span>
+<span class="text-on-surface">Barista Craftsmanship</span>
+</div>
+</div>
+<!-- Vertical Complement Image -->
+<div class="md:col-span-5 relative group overflow-hidden border border-outline-variant/40 bg-surface">
+<div class="aspect-[16/10] md:aspect-[4/5] overflow-hidden">
+<img alt="Meja marmer travertin dengan sajian iced latte dingin, cappuccino berbusa halus, dan butter croissant hangat" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAjFzpls2MHEecVBYp8iF7R_sLftvDkxU4SmAcBYEcfUeVxwFJefc1mZl3jJPVogsv-CO4x7mB_W_M-3pyKSEsW8OYVxWR9-_PWQU5N8mnP_HeYBXjqcD99HKXYIIp5-9AaE49savW2a6RKZAVv1yT-vRoVsxcmcZs9r7EEoAjllPudUOfQ0wfFUyaT6WfvvWwVhDctFi2Ae0ypmlDJdY4OmhodWvjXbDZRaTzL9yQEXjCLj8fnjQkQMQ"/>
+</div>
+<div class="p-4 bg-surface flex justify-between items-center text-xs text-outline font-label-sm uppercase tracking-wider">
+<span>02 / Ritual Secangkir Pagi</span>
+<span class="text-on-surface">Slow Sip &amp; Pastry</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- VISIT US & LOCATION (Lokasi) -->
+<section class="py-space-xl md:py-28 bg-surface" id="lokasi">
+<div class="max-w-7xl mx-auto px-space-md md:px-margin">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
+<!-- Information Panel (Left 5 Cols) -->
+<div class="lg:col-span-5 space-y-8">
+<div>
+<span class="font-label-md text-label-md tracking-[0.2em] uppercase text-primary font-semibold block mb-2">
+                Kunjungi Kami
+              </span>
+<h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface font-normal leading-snug">
+                Cerita Berikutnya <br class="hidden sm:inline"/>Dimulai di Sini.
+              </h2>
+</div>
+<div class="space-y-6 divide-y divide-outline-variant/30 text-on-surface">
+<!-- Address -->
+<div class="pt-4 first:pt-0">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-outline block mb-1">
+                  Alamat Kami
+                </span>
+<p class="font-body-md text-body-md text-on-surface font-medium leading-relaxed">
+                  Jl. Senopati No. 42, Kebayoran Baru, Jakarta Selatan 12190
+                </p>
+<p class="font-body-sm text-body-sm text-on-surface-variant font-light mt-0.5">
+                  (Tersedia area parkir motor &amp; mobil luas dengan valet service)
+                </p>
+</div>
+<!-- Opening Hours -->
+<div class="pt-6">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-outline block mb-1">
+                  Jam Operasional
+                </span>
+<p class="font-body-md text-body-md text-on-surface font-medium">
+                  Senin – Jumat : 07:00 – 22:00 WIB
+                </p>
+<p class="font-body-md text-body-md text-on-surface font-medium">
+                  Sabtu – Minggu : 07:00 – 23:00 WIB
+                </p>
+<p class="font-body-sm text-body-sm text-outline font-light mt-1">
+                  Dapur hot-brunch siap melayani hingga 21:00 WIB.
+                </p>
+</div>
+<!-- Communication -->
+<div class="pt-6">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-outline block mb-1">
+                  Reservasi &amp; Pertanyaan
+                </span>
+<p class="font-body-md text-body-md text-on-surface font-medium">
+                  WhatsApp: <a class="text-primary underline hover:text-primary-container" href="https://wa.me/6281234567890" rel="noopener noreferrer" target="_blank">+62 812-3456-7890</a>
+</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+                  Instagram: <a class="text-primary hover:underline" href="https://instagram.com" rel="noopener noreferrer" target="_blank">@kalacoffee.space</a>
+</p>
+</div>
+</div>
+<!-- Action -->
+<div class="pt-2">
+<a class="inline-flex items-center justify-center gap-3 w-full sm:w-auto px-8 py-4 bg-inverse-surface text-inverse-on-surface font-label-md text-label-md tracking-widest uppercase hover:bg-primary-container transition-all duration-300" href="https://maps.google.com" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-lg">navigation</span>
+<span>Dapatkan Petunjuk Arah</span>
+</a>
+</div>
+</div>
+<!-- Minimal Styled Interactive Map Card (Right 7 Cols) -->
+<div class="lg:col-span-7 bg-surface-container p-4 sm:p-6 border border-outline-variant/40">
+<div class="relative w-full aspect-[4/3] bg-surface-variant overflow-hidden border border-outline-variant/30 flex items-center justify-center">
+<!-- Subtle Cartographic Pattern -->
+<div class="absolute inset-0 opacity-25 pointer-events-none" style="background-image: radial-gradient(#81756b 1px, transparent 1px); background-size: 24px 24px;"></div>
+<!-- Geometric Map Street Mockup Lines -->
+<div class="absolute inset-0 flex items-center justify-center pointer-events-none opacity-40">
+<div class="w-full h-[2px] bg-outline -rotate-12 absolute"></div>
+<div class="w-full h-[2px] bg-outline rotate-45 absolute"></div>
+<div class="h-full w-[2px] bg-outline left-1/3 absolute"></div>
+</div>
+<!-- Map Center Marker -->
+<div class="relative z-10 flex flex-col items-center">
+<div class="w-12 h-12 rounded-full bg-inverse-surface text-surface flex items-center justify-center shadow-lg border-2 border-surface animate-bounce">
+<span class="material-symbols-outlined text-2xl">local_cafe</span>
+</div>
+<div class="mt-3 bg-surface px-4 py-2 border border-outline-variant/60 shadow-md text-center">
+<p class="font-headline-sm text-sm font-semibold text-on-surface tracking-wide">KALA Coffee &amp; Space</p>
+<p class="font-label-sm text-[10px] uppercase text-outline tracking-wider">Senopati, Jakarta Selatan</p>
+</div>
+</div>
+<!-- Map Interactive Floating Action -->
+<div class="absolute bottom-4 right-4 z-10">
+<a class="bg-surface/90 hover:bg-surface text-on-surface px-4 py-2 text-xs font-label-md tracking-wider uppercase border border-outline-variant/60 flex items-center gap-1.5 backdrop-blur-sm shadow-sm transition-colors" href="https://maps.google.com" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-sm">open_in_new</span>
+                  Buka Google Maps
+                </a>
+</div>
+</div>
+<!-- Spatial Amenities Note -->
+<div class="mt-4 pt-3 border-t border-outline-variant/30 flex flex-wrap items-center justify-between text-xs text-outline font-label-sm uppercase tracking-wider gap-2">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-sm text-primary">local_parking</span> Parkir Luas
+              </span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-sm text-primary">park</span> Area Outdoor Taman
+              </span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-sm text-primary">power</span> Colokan Setiap Meja
+              </span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-sm text-primary">pets</span> Pet-Friendly Courtyard
+              </span>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- AMBIENT AUDIO STRIP (Editorial Add-on) -->
+<aside class="hidden sm:block fixed bottom-4 right-6 z-40 bg-surface/95 dark:bg-inverse-surface/95 border border-outline-variant/60 shadow-md backdrop-blur-md px-4 py-2.5 max-w-sm">
+<div class="flex items-center space-x-3">
+<div class="w-2.5 h-2.5 rounded-full bg-primary animate-ping"></div>
+<div class="flex flex-col">
+<span class="font-label-sm text-[9px] uppercase tracking-[0.2em] text-outline">KALA Atmosphere Playlist</span>
+<span class="font-body-sm text-xs font-medium text-on-surface truncate">Afternoon Lo-Fi &amp; Acoustic Drift</span>
+</div>
+<a class="ml-2 text-primary hover:text-primary-container p-1" href="https://spotify.com" rel="noopener noreferrer" target="_blank" title="Dengarkan di Spotify">
+<span class="material-symbols-outlined text-base">graphic_eq</span>
+</a>
+</div>
+</aside>
+<!-- FOOTER (Anchored via Shared Components JSON) -->
+<footer class="bg-inverse-surface dark:bg-surface-container-lowest text-inverse-on-surface dark:text-on-surface border-t border-outline/20 dark:border-outline-variant/20">
+<div class="w-full px-space-md md:px-margin py-space-xl max-w-7xl mx-auto flex flex-col justify-between">
+<!-- Top Row: Brand & Links -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-10 pb-12 border-b border-outline/20">
+<!-- Brand Info -->
+<div class="md:col-span-5 space-y-4">
+<p class="font-headline-lg text-headline-lg text-inverse-on-surface dark:text-on-surface font-normal tracking-wide">
+            KALA
+          </p>
+<p class="font-headline-sm text-sm text-outline-variant dark:text-on-surface-variant italic font-light">
+            “Every Moment Has Its Own Story.”
+          </p>
+<p class="font-body-sm text-body-sm text-outline-variant dark:text-on-surface-variant max-w-sm leading-relaxed font-light">
+            Ruang temu, kopi bernyawa, dan perayaan waktu yang berjalan santai di Kebayoran Baru, Jakarta Selatan.
+          </p>
+</div>
+<!-- Site Navigation Links -->
+<div class="md:col-span-4 space-y-3">
+<span class="font-label-sm text-label-sm tracking-widest uppercase text-outline block mb-2">Navigasi</span>
+<div class="flex flex-wrap gap-y-2 gap-x-6">
+<a class="font-label-md text-label-md tracking-wider uppercase text-outline-variant dark:text-on-surface-variant hover:text-inverse-on-surface dark:hover:text-on-surface transition-colors duration-300" href="#beranda">
+              Beranda
+            </a>
+<a class="font-label-md text-label-md tracking-wider uppercase text-outline-variant dark:text-on-surface-variant hover:text-inverse-on-surface dark:hover:text-on-surface transition-colors duration-300" href="#cerita-kami">
+              Cerita Kami
+            </a>
+<a class="font-label-md text-label-md tracking-wider uppercase text-outline-variant dark:text-on-surface-variant hover:text-inverse-on-surface dark:hover:text-on-surface transition-colors duration-300" href="#menu">
+              Menu
+            </a>
+<a class="font-label-md text-label-md tracking-wider uppercase text-outline-variant dark:text-on-surface-variant hover:text-inverse-on-surface dark:hover:text-on-surface transition-colors duration-300" href="#galeri">
+              Galeri
+            </a>
+<a class="font-label-md text-label-md tracking-wider uppercase text-outline-variant dark:text-on-surface-variant hover:text-inverse-on-surface dark:hover:text-on-surface transition-colors duration-300" href="#lokasi">
+              Lokasi
+            </a>
+<a class="font-label-md text-label-md tracking-wider uppercase text-outline-variant dark:text-on-surface-variant hover:text-inverse-on-surface dark:hover:text-on-surface transition-colors duration-300" href="#privasi">
+              Privasi
+            </a>
+<a class="font-label-md text-label-md tracking-wider uppercase text-outline-variant dark:text-on-surface-variant hover:text-inverse-on-surface dark:hover:text-on-surface transition-colors duration-300" href="#syarat">
+              Syarat &amp; Ketentuan
+            </a>
+</div>
+</div>
+<!-- Social Channels -->
+<div class="md:col-span-3 space-y-3">
+<span class="font-label-sm text-label-sm tracking-widest uppercase text-outline block mb-2">Kanal Cerita</span>
+<ul class="space-y-2 font-body-sm text-body-sm">
+<li>
+<a class="text-outline-variant hover:text-inverse-on-surface transition-colors flex items-center gap-2" href="https://instagram.com">
+<span>Instagram</span>
+<span class="text-xs text-outline">@kalacoffee.space</span>
+</a>
+</li>
+<li>
+<a class="text-outline-variant hover:text-inverse-on-surface transition-colors flex items-center gap-2" href="https://spotify.com">
+<span>Spotify Playlist</span>
+<span class="text-xs text-outline">KALA Ambient Vol. 1</span>
+</a>
+</li>
+<li>
+<a class="text-outline-variant hover:text-inverse-on-surface transition-colors flex items-center gap-2" href="https://tiktok.com">
+<span>TikTok</span>
+<span class="text-xs text-outline">@kala.space</span>
+</a>
+</li>
+</ul>
+</div>
+</div>
+<!-- Bottom Row: Copyright -->
+<div class="pt-8 flex flex-col sm:flex-row justify-between items-center text-outline-variant dark:text-on-surface-variant text-xs gap-4 font-body-sm text-body-sm">
+<p>© 2025 KALA Coffee &amp; Space. Hak Cipta Dilindungi Undang-Undang.</p>
+<p class="font-light tracking-wide text-outline">Senopati • Jakarta Selatan</p>
+</div>
+</div>
+</footer>
+<!-- Light interactive script for responsive mobile navigation -->
+<script>
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const mobileLinks = document.querySelectorAll('.mobile-nav-link');
+
+    if (mobileMenuBtn && mobileMenu) {
+      mobileMenuBtn.addEventListener('click', () => {
+        const isHidden = mobileMenu.classList.contains('hidden');
+        if (isHidden) {
+          mobileMenu.classList.remove('hidden');
+          mobileMenu.classList.add('flex');
+        } else {
+          mobileMenu.classList.add('hidden');
+          mobileMenu.classList.remove('flex');
+        }
+      });
+
+      mobileLinks.forEach(link => {
+        link.addEventListener('click', () => {
+          mobileMenu.classList.add('hidden');
+          mobileMenu.classList.remove('flex');
+        });
+      });
+    }
+  </script>
+</body></html>
